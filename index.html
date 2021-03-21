@@ -1,11 +1,226 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>title</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-  </body>
+<html>
+ <head>
+     <title>Roga & Kopita</title>
+     <link rel="stylesheet" href="reset.css" type="text/css"/>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="style.css" type="text/css"/>
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+     <script type="text/javascript">
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                event.preventDefault();
+                var id  = $(this).attr('href'),
+                top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+});
+</script>
+     
+</head>
+    <meta charset="UTF-8" />
+
+    <body>
+        <header >
+            <div class="container">
+                <div class="dev_name">
+                    Roga & Kopita
+                </div>
+                <div class="menu_bar" id="menu">
+                    <a href="#yak1">Home</a>
+                    <a href="#yak2">About</a>
+                    <a href="#yak3">Servicing</a>
+                    <a href="#yak4">Team</a>
+                    <a href="#yak5">Contact us</a>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="container">
+                <div class="turnkey_website" id="yak1">
+                        <p class="title">Turnkey Website</p>
+                        <p class="post_title">Web Project Development</p>
+                        <div class="button_bar">
+                            <button>Our Services</button>
+                            <button>Order now</button>
+                        </div>
+                        <button class="arrow_bottom"><img src="image/header/arrow.png"></button>
+                </div>
+                <div class="about_us" id="yak2">
+                    <p class="title">About Us</p>
+                    <p class="post_title">Our company is engaged in the development of turnkey websites.</p>
+                    <div class="feature_bar">
+                        <div class="feature">
+                            <img src="image/about/internet.png">
+                            <p class="mini_title">Interregional</p>
+                            <p class="info">We take orders regardless of your location. Everything is secure. Contsct us online!</p>
+                        </div>
+                         <div class="feature">
+                            <img src="image/about/transfer.png">
+                            <p class="mini_title">Love Is The Answer</p>
+                            <p class="info">Your feedback about us us very important to us, so we try to do it at the highest level</p>
+                        </div>
+                         <div class="feature">
+                            <img src="image/about/head.png">
+                            <p class="mini_title">Innovative Ideas</p>
+                            <p class="info">We keep uo with the times and use only the latest tecchnologies<br> &nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="our_services" id="yak3">
+                    <p class="title">Our Services</p>
+                    <p class="post_title">We are engaged in the development of full functionality for your website</p>
+                    <div class="services_bar">
+                        <div class="service">
+                            <img src="image/services/smartphone.png">
+                            <p class="mini_title">Research</p>
+                            <p class="info">We discover all new technologies and new customers.We are always ready to reveal the wishes of our customers</p>
+                            <button>Read more</button>
+                        </div>
+                        <div class="service">
+                            <img src="image/services/smartphone.png">
+                            <p class="mini_title">Portfolio</p>
+                            <p class="info">We have a large base of satisfiled customers, which shows our professionalism<br> &nbsp;</p>
+                            <button>Read more</button>
+                        </div>
+                        <div class="service">
+                            <img src="image/services/smartphone.png">
+                            <p class="mini_title">Support</p>
+                            <p class="info">We support the project until it is released. We edit the project according to the customer's taste<br> &nbsp;</p>
+                            <button>Read more</button>
+                        </div>
+                        <div class="service">
+                            <img src="image/services/smartphone.png">
+                            <p class="mini_title">Documentation</p>
+                            <p class="info">Supporting documentation of the project. Description of all user functionality</p>
+                            <button>Read more</button>
+                        </div>
+                        <div class="service">
+                            <img src="image/services/smartphone.png">
+                            <p class="mini_title">Development</p>
+                            <p class="info">Developing sustainable applicationsfor a large number of people</p>
+                            <button>Read more</button>
+                        </div>
+                        <div class="service">
+                            <img src="image/services/smartphone.png">
+                            <p class="mini_title">Design</p>
+                            <p class="info">Modern design and pleasant colors. A user-friendly, friendly and responsive website</p>
+                            <button>Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="our_team" id="yak4">
+                    <p class="title">Our Team Member</p>
+                    <p class="post_title">Our team consists only of highly qualified specialists in their field</p>
+                    <div class="team_bar">
+                        <div class="member">
+                            <img src="image/team/kostya.png">
+                            <p class="mini_title">
+                            Kalinin Konstantin</p>
+                            <p class="info">Project manager</p>
+                          <div class="contact_member">
+                                 <div class="fon">
+                                     <a href="#">
+                                    <img src="image/team/facebook.png">
+                                     </a>
+                                         </div>
+                                <div class="fon">
+                                    <a href="#">
+                                    <img src="image/team/twitter.png">
+                                    </a>
+                                </div>
+                                <div class="fon">
+                                    <a href="#">
+                                    <img src="image/team/dribble.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="member">
+                            <img src="image/team/maks.png">
+                            <p class="mini_title">
+                            Titok Maksim</p>
+                            <p class="info">Frontend Developer</p>
+                            <div class="contact_member">
+                                 <div class="fon">
+                                     <a href="#">
+                                    <img src="image/team/facebook.png">
+                                     </a>
+                                         </div>
+                                <div class="fon">
+                                    <a href="#">
+                                    <img src="image/team/twitter.png">
+                                    </a>
+                                </div>
+                                <div class="fon">
+                                    <a href="#">
+                                    <img src="image/team/dribble.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                           <div class="member">
+                            <img src="image/team/vitaly.png">
+                            <p class="mini_title">Bogdevich Vitaly
+                            </p>
+                            <p class="info">Backend Developer</p>
+                            <div class="contact_member">
+                                 <div class="fon">
+                                     <a href="#">
+                                    <img src="image/team/facebook.png">
+                                     </a>
+                                         </div>
+                                <div class="fon">
+                                    <a href="#">
+                                    <img src="image/team/twitter.png">
+                                    </a>
+                                </div>
+                                <div class="fon">
+                                    <a href="#">
+                                    <img src="image/team/dribble.png">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      
+                </div>
+                <div class="contact_us" id="yak5">
+                    <p class="title">Contact Us</p>
+                    <p class="post_title">Send us a message and our specialist will contact you as soon as possible!</p>
+                    <div class="contact_bar">
+                        <div class="contact">
+                            <div class="cercle">
+                                <img src="image/contact/placeholder.png">
+                            </div>
+                            <p>Minsk, Brovki Street, 4</p>
+                        </div>
+                        <div class="contact">
+                            <div class="cercle">
+                                <img src="image/contact/phone-call.png">
+                            </div>
+                            <p><a href="+375336748570">+375336748570</a></p>
+                        </div>
+                        <div class="contact">
+                            <div class="cercle">
+                                <img src="image/contact/mail.png">
+                            </div>
+                        <p>gr810102@gmail.ru</p>
+                        </div>
+                     </div>
+                    <form>
+                    <input type="text" class="your_name" required placeholder="Your NAME">
+                    <input type="text" class="your_email" required placeholder="Your Email">
+                    <input type="text" class="message" required  placeholder="Write Message">
+                    <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>All rights Reserved © 2021</p>
+        </footer>
+    </body>
+    
 </html>
